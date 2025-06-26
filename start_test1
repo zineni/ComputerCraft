@@ -1,0 +1,24 @@
+turtle.refuel()
+local k = 5
+while true do
+    turtle.dig()
+    turtle.forward()
+    turtle.digup()
+    turtle.turnLeft()
+    for i in k do
+        turtle.dig()
+        turtle.forward()
+        turtle.digup()
+    end
+    turtle.turnRight()
+    turtle.dig()
+    turtle.forward()
+    turtle.digup()
+    turtle.turnRight()
+    for i in k do
+        turtle.dig()
+        turtle.forward()
+        turtle.digup()
+    end
+    turtle.turnLeft()
+end
